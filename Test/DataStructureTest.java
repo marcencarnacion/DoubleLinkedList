@@ -21,6 +21,13 @@ public class DataStructureTest
         DLL.addNodeToStart(10);
         assertTrue(DLL.getFirst().equals("10"));
     }//end test CheckingFrontAgain
+    @Test   //Adding to the back and checking the front
+    public void checkingFrontAgain2()
+    {
+        DataStructure DLL = new DataStructure();
+        DLL.addNodeToBack(10);
+        assertTrue(DLL.getFirst().equals("10"));
+    }//end test CheckingFrontAgain2
     @Test
     public void checkingBack()
     {
@@ -38,6 +45,13 @@ public class DataStructureTest
         DLL.addNodeToBack(40);
         assertTrue(DLL.getLast().equals("40"));
     }//end test CheckingBackAgain
+    @Test //Adding to start but checking the back
+    public void checkingBackAgain2()
+    {
+        DataStructure DLL = new DataStructure();
+        DLL.addNodeToStart(40);
+        assertTrue(DLL.getLast().equals("40"));
+    }//end test CheckingBackAgain2
     @Test
     public void checkingLength()
     {
